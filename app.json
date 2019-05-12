@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/fufei/fufei",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#222",
+    "navigationBarTitleText": "观音灵签",
+    "navigationBarTextStyle": "white"
+  }
+}

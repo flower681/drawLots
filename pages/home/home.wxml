@@ -1,0 +1,8 @@
+<image class="bg-img" src="/images/bg-roll.png"></image>
+<image class="role-img" mode="aspectFit" src="/images/role-gy.png"></image>
+<image class="text-img" src="/images/text-gy.png"></image>
+<image animation="{{animationData}}" catchtap="roll" class="qiantong" src="/images/qiantong.png"></image>
+<view class="mask" wx:if="{{isShow}}">
+    <image catchtap="showDetail" class="qian" src="/images/qian.png"></image>
+</view>
+<button catchtap="roll" class="btn-roll">摇一摇</button>

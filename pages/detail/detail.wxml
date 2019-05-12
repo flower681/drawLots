@@ -1,0 +1,24 @@
+<image class="bg-img" src="/images/bg-detail.png"></image>
+<text class="title"> {{type}} 签文</text>
+<text class="title-sub" style="letter-spacing:{{(480-60*title.length)/title.length}}rpx">{{title}}</text>
+<text class="content-1" style="font-size:{{contentFontSize}}rpx">{{content1}}</text>
+<text class="content-2" style="font-size:{{contentFontSize}}rpx">{{content2}}</text>
+<text catchtap="test" class="order">{{id}}</text>
+<image class="stamp" src="/images/stamp.png"></image>
+<text class="stamp-text">{{lv}}</text>
+<button animation="{{animationData}}" catchtap="fufei" class="btn-share" wx:if="{{!isShowDetail&&!isFromHistory}}">
+      <text class="foot">查看详细解签</text>
+    <!-- <image src="/images/btn-shareDetail.png"></image> -->
+</button>
+<view wx:if="{{isShowDetail||isFromHistory}}">
+    <image class="jie-qian" src="/images/jieqian.png"></image>
+    <text class="detail">{{detail1}}</text>
+    <text class="detail">{{detail2}}</text>
+    <text class="detail">{{detail3}}</text>
+    <image catchtap="backRoll" class="btn" src="/images/btn-more.png" wx:if="{{!isFromHistory}}"></image>
+    <button class="btn-share" openType="share" wx:if="{{isFromHistory}}">
+       
+        <image src="/images/btn-share.png"></image>
+    </button>
+    <image catchtap="save" class="btn-bottom" src="/images/btn-save.png" wx:if="{{!isFromHistory&&isShowSave}}"></image>
+</view>
